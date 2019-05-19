@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import sys
 import getpass
 import keyring
 from config import *
@@ -20,7 +21,8 @@ def setAuth(username):
 	else:
 		print("Please enter your password: ")
 		PASSWORD = getpass.getpass()
-		should_store = str(input("Would you like to store the password encrpyted for the future? [y/N]\n "))
+		print("Would you like to store the password encrpyted for the future? [y/N]")
+		should_store = str(sys.stdin.readline()[:-1])
 		if should_store == "y":
 			storePwd(PASSWORD, username)
 

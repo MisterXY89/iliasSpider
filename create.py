@@ -6,6 +6,7 @@
 # the exec_file calls scrapy via: scrapy crawl ilias -a username=tilman.kerl -a targetdir = 
 
 import os
+import sys
 from config import *
 
 
@@ -20,21 +21,29 @@ def createFile():
 	print("Since all files are downloaded with a .pdf extension there might occur an error downloading files of another file format.")
 	print("In most cases, it is sufficient to just change the .pdf extension to the correct one.")
 
-	name = input("Enter a name for your spider (e.g. the name of the course):\n> ")
-	username = input("Your ilias username:\n> ")
-	iliasUrl = input("The Url of the ilias course:\n> ")
-	targetDir = input("Where do you store all your university materials for this course?\n> ")
-	print("\nIf you do not need to download assignments/slides just leave the field emtpy.")
-	ubsId = input("How can assignments be identified? (e.g. assignment_01_Course.pdf -> assignment)\n> ")
-	slidesId = input("How can slides be identified? (e.g. ADS_slides_W1.pdf -> assignment)\n> ")
-	ubsDir = input("Where should your assignment files be stored?\n> ")
-	slidesDir = input("Where should your slide files be stored?\n> ")
+	print("Enter a name for your spider (e.g. the name of the course): ")
+	name = str(sys.stdin.readline()[:-1])
+	print("Your ilias username: ")
+	username = str(sys.stdin.readline()[:-1])
+	print("The Url of the ilias course: ")
+	iliasUrl = str(sys.stdin.readline()[:-1])
+	print("Where do you store all your university materials for this course? ")
+	targetDir = str(sys.stdin.readline()[:-1])
+	print("If you do not need to download assignments/slides just leave the field emtpy.")
+	print("How can assignments be identified? (e.g. assignment_01_Course.pdf -> assignment) ")
+	ubsId = str(sys.stdin.readline()[:-1])
+	print("How can slides be identified? (e.g. ADS_slides_W1.pdf -> assignment) ")
+	slidesId = str(sys.stdin.readline()[:-1])
+	print("Where should your assignment files be stored? ")
+	ubsDir = str(sys.stdin.readline()[:-1])
+	print("Where should your slide files be stored? ")
+	slidesDir = str(sys.stdin.readline()[:-1])
 	filename = name + ".py"
 
-	content = "# -*- coding: utf-8 -*-"
-	content += "#############################################################"
+	content = "# -*- coding: utf-8 -*- \n"
+	content += "############################################################# \n"
 	content += "# iliasSpider is a web scraper which downloads your materials \n"
-	content += "from an ilias course (Uni Constance) \n"
+	content += "# from an ilias course (Uni Constance) \n"
 	content += "# \n"
 	content += "# Bei Fehlern oder Fragen: \n"
 	content += "# -> Eröffne einen neuen Issue auf github[https://github.com/MisterXY89/iliasSpider] \n"
