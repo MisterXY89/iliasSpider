@@ -18,13 +18,13 @@ The spider can be found here: `ilias_spider/spiders/ilias.py`.
 Install (if not satisfied):
 pip https://pip.pypa.io/en/stable/
  - **FOR UBUNTU:** 
-	- Python 3.x  https://www.python.org/downloads/ for ubuntu
+	- Python 2.x or 3.x  https://www.python.org/downloads/
 	 - the following python reqs. via pip:
 	`$ pip install -r requirements.txt`
 
  -  **FOR WINDOWS:** 
-	 - Python 2.7 since Python3 is not supported on Windows with Scrapy. 
-	 - Then follow the [instructions](https://doc.scrapy.org/en/1.1/intro/install.html#windows) to set up scrapy
+	 - Python 2.7 (since Python 3 is not supported on Windows with Scrapy)
+	 - follow the [instructions](https://doc.scrapy.org/en/1.1/intro/install.html#windows) to set up scrapy & restart
 	 - `$ pip install keyring`
 
 ### Run it
