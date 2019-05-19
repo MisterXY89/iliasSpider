@@ -34,5 +34,5 @@ You will be prompted a few questions to config your spider. Everything you need 
 ## Possible Errors
 Since all files are downloaded with a .pdf extension there might occur an error downloading files of another file format. 
 In most cases, it is sufficient to just change the .pdf extension to the correct one.
-If any errors occur, try to restart the program and check your config. If it still occurs open a new [issue](https://github.com/MisterXY89/iliasSpider/issue).
+If any errors occur, try to restart the program and check your config. If it still occurs open a new [issue](https://github.com/MisterXY89/iliasSpider/issues).
 
