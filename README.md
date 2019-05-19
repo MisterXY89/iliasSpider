@@ -6,6 +6,10 @@
 I am using [scrapy (docs)](https://docs.scrapy.org/en/latest/index.html) to login and download the files. 
 
 > Scrapy is an application framework for crawling web sites and extracting structured data which can be used for a wide range of useful applications, like data mining, information processing or historical archival.
+> 
+
+For those who are not familiar with the scrapy folder structure:
+The spider can be found here: `ilias_spider/spiders/ilias.py`.
 
 ## Get things going
 
