@@ -1,3 +1,4 @@
+
 # iliasSpider
 
 `iliasSpider` is a web scraper which downloads your materials from an ilias course (@Uni Constance) written in python. 
@@ -15,11 +16,16 @@ The spider can be found here: `ilias_spider/spiders/ilias.py`.
 
 ### Setup
 Install (if not satisfied):
- - Python 3.x  https://www.python.org/downloads/ for ubuntu
- - ! FOR WINDOWS INSTALL Python 2.7 since Python3 is not supported on Windows with Scrapy
- - pip https://pip.pypa.io/en/stable/
- - the following python reqs. via pip:
-`$ pip install -r requirements.txt`
+pip https://pip.pypa.io/en/stable/
+ - **FOR UBUNTU:** 
+	- Python 3.x  https://www.python.org/downloads/ for ubuntu
+	 - the following python reqs. via pip:
+	`$ pip install -r requirements.txt`
+
+ -  **FOR WINDOWS:** 
+	 - Python 2.7 since Python3 is not supported on Windows with Scrapy. 
+	 - Then follow the [instructions](https://doc.scrapy.org/en/1.1/intro/install.html#windows) to set up scrapy
+	 - `$ pip install keyring`
 
 ### Run it
 You can create for every ilias folder a download program via `create.py`.  Simply run it with `pyhton create.py`.
