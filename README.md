@@ -17,7 +17,7 @@ The spider can be found here: `ilias_spider/spiders/ilias.py`.
 ### Setup
 Install (if not satisfied):
 pip https://pip.pypa.io/en/stable/
- - **FOR UBUNTU:** 
+ - **FOR LINUX:** 
 	- Python 2.x or 3.x  https://www.python.org/downloads/
 	 - the following python reqs. via pip:
 	`$ pip install -r requirements.txt`
