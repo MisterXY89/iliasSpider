@@ -30,6 +30,7 @@ def createFile():
 	print("Where do you store all your university materials for this course? ")
 	targetDir = str(sys.stdin.readline()[:-1])
 	print("If you do not need to download assignments/slides just leave the field emtpy.")
+	print("If possible avoid umlauts.")
 	print("How can assignments be identified? (e.g. assignment_01_Course.pdf -> assignment) ")
 	ubsId = str(sys.stdin.readline()[:-1])
 	print("How can slides be identified? (e.g. ADS_slides_W1.pdf -> assignment) ")
