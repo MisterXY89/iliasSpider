@@ -17,6 +17,9 @@ from config import *
 DIR = ""
 
 def createFile():
+	print("Since all files are downloaded with a .pdf extension there might occur an error downloading files of another file format.")
+	print("In most cases, it is sufficient to just change the .pdf extension to the correct one.")
+
 	name = input("Enter a name for your spider (e.g. the name of the course):\n> ")
 	username = input("Your ilias username:\n> ")
 	iliasUrl = input("The Url of the ilias course:\n> ")
@@ -28,12 +31,15 @@ def createFile():
 	slidesDir = input("Where should your slide files be stored?\n> ")
 	filename = name + ".py"
 
-	content = ""
-	content += "# iliasSpider is a web scraper which downloads your materials from a ilias course (Uni Constance) \n\n"
+	content = "# -*- coding: utf-8 -*-"
+	content += "#############################################################"
+	content += "# iliasSpider is a web scraper which downloads your materials \n"
+	content += "from an ilias course (Uni Constance) \n"
+	content += "# \n"
 	content += "# Bei Fehlern oder Fragen: \n"
-	content += "# -> Eröffne einen neuen Issue auf github[https://github.com/MisterXY89/iliasSpider] "
-	content += "# @author Tilman Kerl"
-	content += "# @version 2019.05.19"
+	content += "# -> Eröffne einen neuen Issue auf github[https://github.com/MisterXY89/iliasSpider] \n"
+	content += "# @author Tilman Kerl \n"
+	content += "# @version 2019.05.19\n\n"
 	content += "import os\n"
 	content += "from config import *\n"
 	content += "c = Config('%s', '%s', '%s', '%s', '%s', '%s', '%s')\n"%(username, iliasUrl, targetDir, ubsId, slidesId, ubsDir, slidesDir)
