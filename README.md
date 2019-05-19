@@ -15,7 +15,8 @@ The spider can be found here: `ilias_spider/spiders/ilias.py`.
 
 ### Setup
 Install (if not satisfied):
- - Python 3.x  https://www.python.org/downloads/ 
+ - Python 3.x  https://www.python.org/downloads/ for ubuntu
+ - ! FOR WINDOWS INSTALL Python 2.7 since Python3 is not supported on Windows with Scrapy
  - pip https://pip.pypa.io/en/stable/
  - the following python reqs. via pip:
 `$ pip install -r requirements.txt`
