@@ -10,7 +10,7 @@ from privacy import *
 
 class iliasSpider(scrapy.Spider):
 	name = SPIDER_NAME
-	
+
 	start_urls = [
 		ILIAS_LOGIN_URL
 	]
@@ -26,9 +26,9 @@ class iliasSpider(scrapy.Spider):
 		self.assignments_dir = assignmentsDir
 		self.slides_dir = slidesDir
 
-		setAuth(self.username)		
+		setAuth(self.username)
 
-	
+
 	def parse(self, response):
 		return scrapy.FormRequest.from_response(
 			response,
@@ -52,7 +52,7 @@ class iliasSpider(scrapy.Spider):
 				callback=self.findDownloadLinksAndNames
 			)
 
-	
+
 	def findDownloadLinksAndNames(self,response):
 		sel = Selector(response)
 		fnames = sel.css("h4.il_ContainerItemTitle a::text").extract()
@@ -62,7 +62,7 @@ class iliasSpider(scrapy.Spider):
 			yield Request(
 				url = href,
 				callback = self.download
-			)	
+			)
 
 
 	# verify if file should be downloaded
@@ -91,6 +91,8 @@ class iliasSpider(scrapy.Spider):
 	def prepFileName(self, filename):
 		filename = filename.replace("/","_")
 		filename = filename.replace(" ","_")
+		filename = filename.replace("(","_")
+		filename = filename.replace(")","_")
 		return filename + ".pdf"
 
 
