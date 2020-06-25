@@ -15,7 +15,6 @@ jeepney==0.4
 keyring==19.0.2
 lxml==4.3.3
 parsel==1.5.1
-pkg-resources==0.0.0
 pyasn1==0.4.5
 pyasn1-modules==0.2.5
 pycparser==2.19
@@ -28,7 +27,7 @@ Scrapy==1.6.0
 SecretStorage==3.1.1
 service-identity==18.1.0
 six==1.12.0
-Twisted==19.2.1
+twisted>=19.2.1
 urllib3==1.25.2
 w3lib==1.20.0
 zope.interface==4.6.0
