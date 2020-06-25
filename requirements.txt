@@ -15,7 +15,6 @@ jeepney==0.4
 keyring==19.0.2
 lxml==4.3.3
 parsel==1.5.1
-pkg-resources==0.0.0
 pyasn1==0.4.5
 pyasn1-modules==0.2.5
 pycparser==2.19
