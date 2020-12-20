@@ -1,5 +1,17 @@
 
-# iliasSpider
+# iliasSpider OUTDATED - USE [MisterXY89/iliasScraper](https://github.com/MisterXY89/iliasScraper)
+
+**THIS IS OUTDATED AND DOES NOT WORK ANYMORE. THEREFORE PLEASE GO TO: 
+[MisterXY89/iliasScraper](https://github.com/MisterXY89/iliasScraper)**
+-------------------------------------------------------------------------------------------------------
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
 
 `iliasSpider` is a web scraper which downloads your materials from an ilias course (@Uni Constance) written in python. 
 
